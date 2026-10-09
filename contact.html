@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Talk to Agentsy</title>
+  <meta name="description" content="Tell us where you’re at. We’ll help you work out what comes next.">
+  <meta name="theme-color" content="#4f1693">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css?v=8c972897">
+  <script>
+    if (window.matchMedia("(prefers-reduced-motion: no-preference)").matches) document.documentElement.classList.add("has-motion");
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    window.name = "";
+    if (!location.hash) window.scrollTo(0, 0);
+  </script>
+  <script src="script.js?v=8c972897" defer></script>
+  <script type="module" src="phone-wheel.js?v=8c972897"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-row">
+      <a class="brand" href="index.html">
+        <span class="logo"><img src="brand/agentsy-logo-white.png" alt="Agentsy" width="1000" height="216"></span>
+      </a>
+      <details class="nav-menu">
+        <summary class="menu-button"><span class="visually-hidden">Menu</span><span class="burger" aria-hidden="true"><span></span><span></span><span></span></span></summary>
+        <div class="menu-dim" aria-hidden="true"></div>
+        <nav class="menu-panel" aria-label="Main">
+          <ul class="menu-links" role="list">
+            <li style="--i: 0"><a href="ai-implementation.html">What We Do</a></li>
+            <li style="--i: 1"><a href="how-we-work.html">How We Work</a></li>
+            <li style="--i: 2"><a href="case-studies.html">Case Studies</a></li>
+            <li style="--i: 3"><a href="about.html">About</a></li>
+            <li style="--i: 4"><a class="menu-cta" href="contact.html">Talk to Agentsy &rarr;</a></li>
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="subpage-hero" aria-labelledby="page-title">
+      <div class="hero-phones" data-phone-wheel aria-hidden="true"><canvas></canvas></div>
+      <div class="container subpage-hero-body">
+        <h1 class="subpage-title" id="page-title">What do you want <span class="italic">to build?</span></h1>
+        <div class="subpage-lede lede-equal">
+          <p>Maybe you’ve already got an idea.</p>
+          <p>Maybe you’ve already vibe coded it.</p>
+          <p>Maybe your team is experimenting everywhere.</p>
+          <p>Maybe you just know there must be a better way.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow" aria-labelledby="form-title">
+      <div class="container">
+        <div class="statement is-end">
+          <h2 class="h2 statement-head" id="form-title"><span class="line">Tell us where you’re at.</span> <span class="line italic">We’ll help you work out <span class="say-key">what comes next</span>.</span></h2>
+          <form class="statement-body contact-form" aria-labelledby="form-title" action="https://formsubmit.co/tim@agentsy.ai" method="POST" data-send-to="https://formsubmit.co/ajax/tim@agentsy.ai">
+            <input type="hidden" name="_subject" value="New enquiry from the Agentsy website">
+            <input type="hidden" name="_template" value="table">
+            <input class="visually-hidden" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="field">
+              <label class="field-label" for="contact-name">Name</label>
+              <input class="field-input" id="contact-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label class="field-label" for="contact-email">Work email</label>
+              <input class="field-input" id="contact-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+            </div>
+            <div class="field">
+              <label class="field-label" for="contact-company">Company</label>
+              <input class="field-input" id="contact-company" name="company" type="text" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label class="field-label" for="contact-thinking">What are you thinking about?</label>
+              <textarea class="field-input" id="contact-thinking" name="thinking" rows="7" required placeholder="An idea, workflow, product, AI experiment, problem or opportunity. It doesn’t need to be polished."></textarea>
+            </div>
+            <button class="button button-large" type="submit">Talk to Agentsy <span class="button-arrow" aria-hidden="true">→</span></button>
+            <p class="form-status" role="status" aria-live="polite" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow" aria-labelledby="unsure-title">
+      <div class="container">
+        <div class="statement">
+          <h2 class="h2 statement-head" id="unsure-title">Don’t know exactly <span class="italic">what you need?</span></h2>
+          <div class="statement-body">
+            <p>That’s fine.</p>
+            <p>You don’t need an AI strategy before talking to us.</p>
+            <p class="statement-end">That’s <span class="say-key">part of the conversation</span>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="brand" href="index.html">
+        <span class="logo"><img src="brand/agentsy-logo-white.png" alt="Agentsy" width="1000" height="216"></span>
+      </a>
+      <nav aria-label="Footer">
+        <ul class="footer-links" role="list">
+          <li><a href="ai-implementation.html">What We Do</a></li>
+          <li><a href="how-we-work.html">How We Work</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="why-ai-now.html">Why Now</a></li>
+          <li><a href="who-we-help.html">Who We Help</a></li>
+          <li><a href="partners.html">Partners</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    // Sends the form in place, so the page stays put: the button says it is sending, then the form
+    // says it went, or that it did not and to try again. Without this script the form still posts.
+    (() => {
+      const form = document.querySelector(".contact-form");
+      const status = form?.querySelector(".form-status");
+      const button = form?.querySelector("button[type=submit]");
+      if (!form || !status || !button || !window.fetch) return;
+      const label = button.innerHTML;
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        button.disabled = true;
+        button.textContent = "Sending…";
+        status.hidden = true;
+        try {
+          const response = await fetch(form.dataset.sendTo, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify(Object.fromEntries(new FormData(form))),
+          });
+          const reply = await response.json().catch(() => ({}));
+          if (!response.ok || String(reply.success) !== "true") throw new Error(reply.message || response.status);
+          form.reset();
+          form.classList.add("is-sent");
+          status.textContent = "Thanks. We’ll be in touch soon.";
+        } catch {
+          status.textContent = "That didn’t send. Please try again in a moment.";
+        } finally {
+          status.hidden = false;
+          button.disabled = false;
+          button.innerHTML = label;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
